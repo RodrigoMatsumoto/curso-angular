@@ -10,12 +10,31 @@ export class DataBindingComponent {
   url: string = 'http://loiane.com'
   cursoAngular: boolean = true;
   urlImagem = 'http://lorempixel.com/400/200/nature/';
+  valorAtual: string = '';
+  valorSalvo: string = '';
+  isMouseOver: boolean = false;
 
-  getValor() {
+  getValor(){
     return 1;
   }
 
-  getCurtirCurso() {
+  getCurtirCurso(){
     return true;
+  }
+
+  botaoClicado(){
+    alert('Botão clicado!');
+  }
+
+  onKeyUp(evento: KeyboardEvent){
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
+  }
+
+  salvarValor(valor: string){
+    this.valorSalvo = valor;
+  }
+
+  onMouseOverOut(){
+    this.isMouseOver = !this.isMouseOver;
   }
 }
