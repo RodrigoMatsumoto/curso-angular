@@ -9,7 +9,7 @@ export class DataBindingComponent {
 
   url: string = 'http://loiane.com'
   cursoAngular: boolean = true;
-  urlImagem = 'http://lorempixel.com/400/200/nature/';
+  urlImagem = 'https://picsum.photos/seed/picsum/200/300';
   valorAtual: string = '';
   valorSalvo: string = '';
   isMouseOver: boolean = false;
